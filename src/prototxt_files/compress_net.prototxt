@@ -8,11 +8,11 @@ layer {
   }
   transform_param {
     scale: 0.0039215684
-    mean_file: "train_mean.binaryproto"
+    mean_file: "../build/train_mean.binaryproto"
   }
   data_param {
     backend: LMDB
-    source: "train_lmdb"
+    source: "../build/train_lmdb"
     batch_size: 32
   }
 }
@@ -25,11 +25,11 @@ layer {
   }
   transform_param {
     scale: 0.0039215684
-    mean_file: "val_mean.binaryproto"
+    mean_file: "../build/val_mean.binaryproto"
   }
   data_param {
     backend: LMDB
-    source: "val_lmdb"
+    source: "../build/val_lmdb"
     batch_size: 10
   }
 }
@@ -53,7 +53,7 @@ layer {
     decay_mult: 0
   }
   inner_product_param {
-    num_output: 1024
+    num_output: 2048
     weight_filler {
       type: "gaussian"
       std: 1
@@ -85,7 +85,7 @@ layer {
     decay_mult: 0
   }
   inner_product_param {
-    num_output: 512
+    num_output: 1024
     weight_filler {
       type: "gaussian"
       std: 1
@@ -117,7 +117,7 @@ layer {
     decay_mult: 0
   }
   inner_product_param {
-    num_output: 256
+    num_output: 512
     weight_filler {
       type: "gaussian"
       std: 1
@@ -149,7 +149,7 @@ layer {
     decay_mult: 0
   }
   inner_product_param {
-    num_output: 512
+    num_output: 1024
     weight_filler {
       type: "gaussian"
       std: 1
@@ -181,7 +181,7 @@ layer {
     decay_mult: 0
   }
   inner_product_param {
-    num_output: 1024
+    num_output: 2048
     weight_filler {
       type: "gaussian"
       std: 1
@@ -213,7 +213,7 @@ layer {
     decay_mult: 0
   }
   inner_product_param {
-    num_output: 2500
+    num_output: 10000
     weight_filler {
       type: "gaussian"
       std: 1

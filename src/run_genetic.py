@@ -22,10 +22,10 @@ class GeneticAlgorithm:
         self._chromoome_length = 4
 
         """Parametri genetskog algoritma, eksperimentalno izabrani."""
-        self._iterations = 2 #1000                             # Maksimalni dozvoljeni broj iteracija
-        self._generation_size = 3 #5000                        # Broj jedinki u jednoj generaciji
+        self._iterations = 1000                             # Maksimalni dozvoljeni broj iteracija
+        self._generation_size = 20                          # Broj jedinki u jednoj generaciji
         self._mutation_rate = 0.01                          # Verovatnoca da se desi mutacija
-        self._reproduction_size = 3 #1000                      # Broj jedinki koji ucestvuje u reprodukciji
+        self._reproduction_size = 10                        # Broj jedinki koji ucestvuje u reprodukciji
         self._current_iteration = 0                         # Koristi se za interno pracenje iteracija algoritma
         self._crossover_p = 0.5                             # Verovatnoca za odabir bita prvog roditelja pri ukrstanju
         self._top_chromosome = None                         # Hromozom koji predstavlja resenje optimizacionog procesa
