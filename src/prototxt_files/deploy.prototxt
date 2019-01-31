@@ -3,12 +3,12 @@ layer {
   name: "data"
   type: "Input"
   top: "data"
-  input_param {shape: {dim: 1 dim: 1 dim: 200 dim: 200}}
+  input_param {shape: {dim: 1 dim: 1 dim: 50 dim: 50}}
 }
 layer {
   name: "encode1"
   type: "InnerProduct"
-  bottom: "data"
+  bottom: "flatdata"
   top: "encode1"
   param {
     lr_mult: 1
@@ -19,7 +19,7 @@ layer {
     decay_mult: 0
   }
   inner_product_param {
-    num_output: 2048
+    num_output: 1024
     weight_filler {
       type: "gaussian"
       std: 1
@@ -51,7 +51,7 @@ layer {
     decay_mult: 0
   }
   inner_product_param {
-    num_output: 1024
+    num_output: 512
     weight_filler {
       type: "gaussian"
       std: 1
@@ -83,7 +83,7 @@ layer {
     decay_mult: 0
   }
   inner_product_param {
-    num_output: 512
+    num_output: 256
     weight_filler {
       type: "gaussian"
       std: 1
@@ -115,7 +115,7 @@ layer {
     decay_mult: 0
   }
   inner_product_param {
-    num_output: 1024
+    num_output: 512
     weight_filler {
       type: "gaussian"
       std: 1
@@ -147,7 +147,7 @@ layer {
     decay_mult: 0
   }
   inner_product_param {
-    num_output: 2048
+    num_output: 1024
     weight_filler {
       type: "gaussian"
       std: 1
@@ -179,7 +179,7 @@ layer {
     decay_mult: 0
   }
   inner_product_param {
-    num_output: 40000
+    num_output: 2500
     weight_filler {
       type: "gaussian"
       std: 1
