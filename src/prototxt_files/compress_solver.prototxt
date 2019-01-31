@@ -1,20 +1,20 @@
 # The train/test net protocol buffer definition
-net: "compress_net.prototxt"
+net: "prototxt_files/compress_net.prototxt"
 # test_iter specifies how many forward passes the test should carry out.
 #test_iter: 5
 # Carry out testing every 500 training iterations
 #test_interval: 5
 #test_compute_loss: true
 # The base learning rate, momentum and the weight decay of the network.
-base_lr: 0.6656652747877334
+base_lr: 0.3364214143889168
 # The learning rate policy
 lr_policy: "fixed"
-momentum: 0.9301732956523726
-delta: 8.79805061233931e-08
+momentum: 0.9349437097824667
+delta: 3.441188709463344e-08
 display: 100
 # The maximum number of iterations
 max_iter: 100000
-weight_decay: 0.0005047780847771119
+weight_decay: 0.0005115837317415531
 # Snapshot intermediate results
 snapshot: 500000
 snapshot_prefix: "compress_net_snap"

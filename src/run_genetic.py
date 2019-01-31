@@ -236,7 +236,7 @@ def run_train(lr=0.5, momentum=0.95, delta=1e-8, weight_decay=0.0005):
     return loss
 
 def main():
-    genetic = GeneticAlgorithm(0.0000000001, [[0.3,0.7],[0.93,0.97],[1e-9, 1e-7],[0.0003,0.0007]])
+    genetic = GeneticAlgorithm(0.0000000001, [[0.1,0.9],[0.91,0.99],[1e-11, 1e-5],[0.0001,0.0009]])
     solution = genetic.optimize()
     print("Solution: "+solution)
 
