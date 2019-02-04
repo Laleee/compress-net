@@ -23,7 +23,7 @@ class GeneticAlgorithm:
 
         """Parametri genetskog algoritma, eksperimentalno izabrani."""
         self._iterations = 1000                             # Maksimalni dozvoljeni broj iteracija
-        self._generation_size = 20                          # Broj jedinki u jednoj generaciji
+        self._generation_size = 15                          # Broj jedinki u jednoj generaciji
         self._mutation_rate = 0.01                          # Verovatnoca da se desi mutacija
         self._reproduction_size = 10                        # Broj jedinki koji ucestvuje u reprodukciji
         self._current_iteration = 0                         # Koristi se za interno pracenje iteracija algoritma
