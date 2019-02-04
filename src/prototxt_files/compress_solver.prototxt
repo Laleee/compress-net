@@ -6,17 +6,17 @@ test_iter: 500
 test_interval: 500
 test_compute_loss: true
 # The base learning rate, momentum and the weight decay of the network.
-base_lr: 0.5
+base_lr: 0.6779992849423253
 # The learning rate policy
 lr_policy: "fixed"
-momentum: 0.95
-delta: 1e-8
+momentum: 0.9123345368458268
+delta: 5.681543631593656e-06
 display: 100
 # The maximum number of iterations
-max_iter: 150000
-weight_decay: 0.0005
+max_iter: 1000000
+weight_decay: 0.00031919260126716967
 # Snapshot intermediate results
-snapshot: 50000
+snapshot: 200000
 snapshot_prefix: "compress_net_snap"
 # solver mode: CPU or GPU
 solver_mode: GPU
